@@ -31,6 +31,7 @@ void quick_sort(int *array, size_t size)
  * @array: array to be sorted
  * @low_ind: start index
  * @high_ind: end index
+ * @size: size of array
  */
 void recursion(int *array, int low_ind, int high_ind, size_t size)
 {
@@ -48,6 +49,7 @@ void recursion(int *array, int low_ind, int high_ind, size_t size)
  * @array: array to be partitioned
  * @low_ind: start index
  * @high_ind: end index
+ * @size: size of array
  * Return: pivot index
  */
 int parts(int *array, int low_ind, int high_ind, size_t size)
