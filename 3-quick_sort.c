@@ -63,12 +63,14 @@ int parts(int *array, int low_ind, int high_ind, size_t size)
 		if (array[j] < pivot_val)
 		{
 			swapping(&array[i], &array[j]);
-			print_array(array, size);
+			if (array[i] != array[j])
+				print_array(array, size);
 			i++;
 		}
 	}
 	/*place the pivot value at the index i*/
 	swapping(&array[i], &array[high_ind]);
-/*	print_array(array, size);*/
+	if (array[i] != array[high_ind])
+		print_array(array, size);
 	return (i);
 }
